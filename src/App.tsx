@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind'
 import { useEffect, useState } from 'react'
 import styles from './App.module.scss'
+import FullScreenMessage from './components/shared/FullScreenMessage'
 
 const cx = classNames.bind(styles)
 
@@ -14,7 +15,7 @@ function App() {
   useEffect(() => {
     setLoading(true)
 
-    fetch('http://localhost:8888/wedding11')
+    fetch('http://localhost:8888/wedding')
       .then((response) => {
         // response이 제대로 되지 않았을때 에러 메세지를 주지않으면 빈배열로 출력됨
         // 404 에러 -> 명시적으로 throw 해줘야 함
@@ -37,12 +38,12 @@ function App() {
       })
   }, [])
 
-  if (loading) {
-    return <div>Loading...</div>
+  if (loading === false) {
+    return <FullScreenMessage type="loading" />
   }
 
   if (error) {
-    return <div>Error...</div>
+    return <FullScreenMessage type="error" />
   }
 
   return <div className={cx('container')}>{JSON.stringify(wedding)}</div>
