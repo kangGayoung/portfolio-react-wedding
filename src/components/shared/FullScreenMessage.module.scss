@@ -1,0 +1,39 @@
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column; // 세로 배치
+}
+
+.icon-heart {
+  fill: var(--red);
+  width: 60px;
+  height: 60px;
+
+  animation: heart 1.2s infinite linear;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(0.95);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.75);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
