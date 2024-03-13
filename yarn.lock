@@ -5421,6 +5421,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"date-fns@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "date-fns@npm:3.4.0"
+  checksum: 10c0/e4395adcdf10b1784c6479b9d715ed9a1cb06c9d99b95607ad6db43b18371e22314d3e9e5509a378da1c5a6b34b313049bf82897b7f263f413e051f59e0ea5c2
+  languageName: node
+  linkType: hard
+
 "debug@npm:2.6.9, debug@npm:^2.6.0":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -13849,6 +13856,7 @@ __metadata:
     babel-loader: "npm:latest"
     classnames: "npm:^2.5.1"
     craco-alias: "npm:^3.0.1"
+    date-fns: "npm:^3.4.0"
     eslint: "npm:^8.56.0"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-config-react-app: "npm:^7.0.1"
